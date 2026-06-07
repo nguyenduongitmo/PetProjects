@@ -33,7 +33,7 @@ petprojects/
 
 **Tech Stack**: HTML5, CSS3, Vanilla JavaScript
 
-**Live Demo**: [View Demo](https://nguyenduongitmo.github.io/petprojects/expanding-cards/)   
+**Live Demo**: [View Demo](https://nguyenduongitmo.github.io/PetProjects/Expanding%20Cards/)
 **Browse Code**: [./expanding-cards](./expanding-cards)
 ---
 
