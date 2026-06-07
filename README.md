@@ -7,6 +7,7 @@ A collection of mini web projects I've built to practice and improve my web deve
 ---
 
 ## Project Structure
+```
 petprojects/
 ├── expanding-cards/ # Completed
 │ ├── index.html
@@ -14,11 +15,14 @@ petprojects/
 │ └── script.js
 ├── (more projects coming soon...)
 └── README.md
+```
 ---
+
 ## Projects Detail
 
 
 ---
+
 ## Technologies Used
 | Technology | Purpose |
 |------------|---------|
@@ -43,10 +47,10 @@ All projects follow a mobile-first approach:
 Expanding Cards: CSS transitions, flexbox dynamics, event handling, responsive layouts
 
 ##  Running Locally
-git clone https://github.com/nguyenduongitmo/petprojects.git
+git clone https://github.com/nguyenduongitmo/petprojects.git  
 cd petprojects/expanding-cards
 
 ## 🔗 Connect with Me
-GitHub: @nguyenduongitmo
+GitHub: @nguyenduongitmo  
 Portfolio: coming soon
 
