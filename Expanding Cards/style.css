@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playwrite GB J', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden; /* Chỉ ẩn ngang, không ẩn dọc */
+    overflow-y: auto; /* Cho phép scroll dọc */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease;
+    width: 100%; /* Đảm bảo header không tràn */
+}
+
+.main-title{
+    font-size: 5.0rem;
+    background: linear-gradient(0deg, #fff, #870202);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+
+
+.description {
+    font-size: 2.0rem;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    gap: 10px;
+}
+
+.panel {
+    flex: 0.5;
+    height: 80vh;
+    margin: 10px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: flex 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+    color: #fff;
+}
+
+.panel h3 {
+    font-size: 4.0rem;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE FIRST (từ nhỏ lên to)*/
+
+/* Mặc định: Mobile siêu nhỏ (dưới 480px) */
+.container {
+    width: 100vw;
+    gap: 8px;
+}
+
+.main-title {
+    font-size: 1rem;
+}
+
+.description {
+    font-size: 0.7rem;
+}
+
+.panel {
+    height: 55vh;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.panel h3 {
+    font-size: 0.75rem;
+    bottom: 10px;
+    left: 10px;
+}
+
+.panel:nth-child(n+5) {
+    display: none;
+}
+
+/* Mobile lớn (từ 480px trở lên) */
+@media (min-width: 480px) {
+    .container {
+        width: 95vw;
+        gap: 10px;
+    }
+    
+    .main-title {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 0.85rem;
+    }
+    
+    .panel {
+        height: 60vh;
+        margin: 8px;
+        border-radius: 40px;
+    }
+    
+    .panel h3 {
+        font-size: 0.9rem;
+    }
+    
+    .panel:nth-child(n+5) {
+        display: flex; /* Hiện lại các panel */
+    }
+}
+
+/* Tablet (từ 640px trở lên) */
+@media (min-width: 640px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .panel {
+        height: 70vh;
+    }
+    
+    .panel h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet dọc (từ 768px trở lên) */
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .panel h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop (từ 1024px trở lên) */
+@media (min-width: 1024px) {
+    .container {
+        width: 90vw;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .panel {
+        height: 80vh;
+    }
+    
+    .panel h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop lớn (từ 1440px trở lên) */
+@media (min-width: 1440px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .panel h3 {
+        font-size: 2rem;
+    }
+}
