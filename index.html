@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Projects Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pet Projects Collection</h1>
+        <p class="description">A collection of mini web projects I've built</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Expanding Cards/preview.png" alt="Expanding Cards">
+                </div>
+                <div class="project-title">
+                    <h2>Expanding Cards</h2>
+                    <span class="status">Completed</span>
+                </div>
+                <div class="project-description">
+                    <p>Interactive cards that expand smoothly when clicked. Showcasing famous landmarks of Saint Petersburg.</p>
+                </div>
+                <a href="./Expanding Cards/" class="demo-link">View Demo →</a>
+            </div>
+        </div>
+
+        <footer> 
+            <p>More projects coming soon... </p>
+            <p><a href="https://github.com/nguyenduongitmo/petprojects" class="github-link">GitHub Repository</a></p>
+            <p> &copy; <span id="year"></span> by Nguyen Thi Thuy Duong. All rights reserved.</p>
+        </footer>
+
+         <script>
+        // Tự động cập nhật năm bản quyền
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    </div>
+</body>
+</html>
