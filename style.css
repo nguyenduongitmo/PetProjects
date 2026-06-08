@@ -78,7 +78,7 @@ h1 {
     color: #333;
 }
 
-.status {
+.status.completed {
     background: #4caf50;
     color: white;
     padding: 4px 12px;
@@ -106,6 +106,21 @@ h1 {
 
 .demo-link:hover {
     opacity: 0.9;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tech-tag {
+    background: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: #555;
 }
 
 footer {

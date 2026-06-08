@@ -13,36 +13,17 @@ petprojects/
 │ ├── index.html
 │ ├── style.css
 │ └── script.js
+| |__ progress-steps/ # Completed
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
 ├── (more projects coming soon...)
 └── README.md
 ```
 ---
 
 ## Projects Detail
-
-### Expanding Cards
-**Interactive cards that expand smoothly when clicked** — A beautiful UI component showcasing famous places in Saint Petersburg, Russia.
-
-| Feature | Description |
-|---------|-------------|
-| Click Interaction | Click any card → it expands, others shrink |
-| Smooth Animation | CSS transitions with `cubic-bezier` easing |
-| Fully Responsive | Desktop, tablet, and mobile layouts |
-| Visual Effects | Gradient text, shadow effects, fade-in animation |
-| 7 Landmarks | Saint Isaac's Cathedral, Peterhof Palace, Hermitage Museum, and more |
-
-**Tech Stack**: HTML5, CSS3, Vanilla JavaScript
-
-**Live Demo**: [View Demo](https://nguyenduongitmo.github.io/PetProjects/Expanding%20Cards/)
-**Browse Code**: [./expanding-cards](./expanding-cards)
----
-
-## Technologies Used
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Semantic structure |
-| CSS3 | Flexbox, Grid, Animations, Responsive design |
-| JavaScript | DOM manipulation, Event handling |
+**Live Demo**: [View Demo](https://nguyenduongitmo.github.io/PetProjects/)
 
 ---
 
@@ -67,6 +48,13 @@ All projects follow **Mobile First** approach — styles are written for mobile 
 - JavaScript event listeners and class manipulation
 - Responsive breakpoints for multiple devices
 - Keyframe animations (`fadeInDown`)
+
+### Progress Steps
+- CSS positioning (relative/absolute) for progress bar
+- Dynamic width calculation with JavaScript
+- Button state management (disabled/enabled)
+- Mobile First responsive design
+- Event listeners for navigation
 
 ##  Running Locally
 ```
